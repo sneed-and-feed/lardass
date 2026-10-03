@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARDASS — Official Street & Freight Archive</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23111317'/><text x='50' y='65' font-size='42' font-family='sans-serif' font-weight='bold' fill='%23c084fc' text-anchor='middle'>L</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="clean-theme">
+
+  <!-- Header & Masthead -->
+  <header class="masthead">
+    <div class="terminal-bar">
+      <div class="terminal-left">
+        <span class="live-dot"></span>
+        <span class="term-mono">LARDASS // PACIFIC NORTHWEST ARCHIVE</span>
+      </div>
+      <div class="terminal-right">
+        <span class="term-mono">LOC: 49°12'N 122°54'W • LOWER MAINLAND, BC</span>
+        <span class="term-mono" id="currentDateTime">OCT 02, 2026 // 22:35 PST</span>
+      </div>
+    </div>
+
+    <div class="hero-header">
+      <div class="hero-headline-wrap">
+        <div class="hero-top-meta">
+          <span class="meta-tag">OFFICIAL CATALOG</span>
+          <span class="meta-tag">KEFC CREW</span>
+          <span class="meta-tag">2024–PRESENT</span>
+        </div>
+        <h1 class="brand-title">LARDASS</h1>
+        <p class="hero-summary">
+          Independent photographic archive documenting the public street works, transcontinental freight steel, and psychedelic multi-eyed character iconography of <strong>LARDASS</strong> across British Columbia and the Pacific Northwest.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sub-nav">
+      <div class="nav-inner">
+        <a href="#featured" class="nav-item active">FEATURED</a>
+        <a href="#works" class="nav-item">WORKS (<span id="totalPiecesCount">17</span>)</a>
+        <a href="#focus" class="nav-item">FOCUS & MOTIFS</a>
+        <a href="#guestbook" class="nav-item">GUEST LOG <span class="badge-count" id="guestCount">0</span></a>
+        <a href="#about" class="nav-item">ABOUT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+
+    <!-- Section 1: Featured Work -->
+    <section class="featured-section" id="featured">
+      <div class="section-label">
+        <span class="section-title">01 / FEATURED STEEL</span>
+        <span class="section-sub">CANADIAN FREIGHT ROTATION</span>
+      </div>
+
+      <div class="featured-card">
+        <div class="featured-media" id="spotlightTrigger">
+          <img src="assets/images/lard/Captur4e.PNG" alt="LARDASS Autorack piece featuring 3-eyed melting creature" id="spotlightImage">
+          <div class="media-hover-overlay">
+            <span class="inspect-btn">INSPECT HIGH-RES ARCHIVE SCAN</span>
+          </div>
+        </div>
+        <div class="featured-info">
+          <div class="featured-meta-top">
+            <span class="featured-tag">ROLLING STOCK #01</span>
+            <span class="featured-status">ACTIVE MAINLINE</span>
+          </div>
+          <h2 class="featured-title">Autorack Yellow Siding // 3-Eyed Character</h2>
+          <p class="featured-desc">
+            Painted on the side sill of a North American Autorack. Features punchy turquoise <strong>"LARD!"</strong> block lettering with bright orange starbursts and polka dots, alongside his signature three-eyed melting creature in a bowler hat with purple dripping chin tendrils.
+          </p>
+
+          <div class="specs-grid">
+            <div class="spec-cell">
+              <span class="spec-label">SURFACE</span>
+              <span class="spec-value">Yellow Steel Autorack</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-label">CREW & TAGS</span>
+              <span class="spec-value">KEFC • 26 • ZARQ!</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-label">PALETTE</span>
+              <span class="spec-value">Turquoise, Orange, Purple</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-label">SERIES</span>
+              <span class="spec-value">Freight Mainline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Complete Works Gallery -->
+    <section class="works-section" id="works">
+      <div class="section-label">
+        <div class="label-left">
+          <span class="section-title">02 / CATALOG OF WORKS</span>
+          <span class="section-sub">PHOTOGRAPHIC DOCUMENTATION</span>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-bar" id="galleryFilters">
+          <button class="filter-pill active" data-category="all">ALL (<span id="catCountAll">17</span>)</button>
+          <button class="filter-pill" data-category="freight">FREIGHT STEEL (<span id="catCountFreight">3</span>)</button>
+          <button class="filter-pill" data-category="characters">CHARACTERS (<span id="catCountChars">7</span>)</button>
+          <button class="filter-pill" data-category="burners">WALLS & CUTS (<span id="catCountBurners">6</span>)</button>
+          <button class="filter-pill" data-category="blackbook">BLACKBOOK (<span id="catCountInk">1</span>)</button>
+        </div>
+      </div>
+
+      <div class="works-grid" id="galleryGrid">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- Section 3: Focus & Visual Motifs -->
+    <section class="focus-section" id="focus">
+      <div class="section-label">
+        <span class="section-title">03 / STYLISTIC FOCUS</span>
+        <span class="section-sub">ICONOGRAPHY & METHOD</span>
+      </div>
+
+      <div class="focus-grid">
+        <div class="focus-card">
+          <div class="focus-num">01</div>
+          <h3 class="focus-heading">Three-Eyed Characters</h3>
+          <p class="focus-text">
+            Surrealist figurative character heads defined by third-eye iconography, concentric circular contours, exaggerated facial pores, and drooping lower-jaw drips. Often accessorized with bowler hats or jester crowns.
+          </p>
+        </div>
+
+        <div class="focus-card">
+          <div class="focus-num">02</div>
+          <h3 class="focus-heading">Dot-Field Textures</h3>
+          <p class="focus-text">
+            A distinct replacement for conventional spray fades, applying high-contrast secondary color dot rings (orange across emerald, lavender across orchid) along letterforms and borders.
+          </p>
+        </div>
+
+        <div class="focus-card">
+          <div class="focus-num">03</div>
+          <h3 class="focus-heading">Freight Steel & Industrial Cuts</h3>
+          <p class="focus-text">
+            Focus centered on transcontinental grain hoppers, autorack sills, and heavy concrete infrastructure across bridge abutments and riparian rip-rap zones in the Lower Mainland.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Clean Guestbook -->
+    <section class="guestbook-section" id="guestbook">
+      <div class="section-label">
+        <span class="section-title">04 / GUEST LOG</span>
+        <span class="section-sub">COMMUNITY DISPATCHES & BENCH SIGHTINGS</span>
+      </div>
+
+      <div class="guestbook-grid">
+        <!-- Submission Form -->
+        <div class="guestbook-form-pane">
+          <h3 class="form-title">Leave a Message</h3>
+          <p class="form-caption">
+            Submit a bench sighting, message, or respect. Dispatches are saved directly to this log.
+          </p>
+
+          <form id="shoutoutForm" class="clean-form">
+            <div class="form-field">
+              <label for="writerName">NAME / MONIKER <span class="req">*</span></label>
+              <input type="text" id="writerName" placeholder="Your moniker" maxlength="30" required>
+            </div>
+
+            <div class="form-field">
+              <label for="writerCrew">CREW / LOCATION (OPTIONAL)</label>
+              <input type="text" id="writerCrew" placeholder="e.g. KEFC / Vancouver" maxlength="40">
+            </div>
+
+            <div class="form-field">
+              <label for="writerMsg">MESSAGE / SIGHTING <span class="req">*</span></label>
+              <textarea id="writerMsg" rows="4" placeholder="Enter your dispatch or comment..." maxlength="300" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT DISPATCH</button>
+            <div class="form-status" id="formFeedback"></div>
+          </form>
+        </div>
+
+        <!-- Log Display -->
+        <div class="guestbook-feed-pane">
+          <div class="feed-header">
+            <span class="feed-title">LOGGED DISPATCHES</span>
+            <span class="feed-counter" id="feedCounter">0 ENTRIES</span>
+          </div>
+
+          <div class="guestbook-feed" id="shoutoutFeed">
+            <!-- Dynamically populated or empty -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: About & Disclaimer -->
+    <section class="about-section" id="about">
+      <div class="section-label">
+        <span class="section-title">05 / ABOUT</span>
+        <span class="section-sub">ARCHIVAL DISCLOSURE</span>
+      </div>
+
+      <div class="about-card">
+        <p class="about-text">
+          This digital archive is curated strictly for historical and photographic documentation of contemporary Pacific Northwest street art and freight culture. All photographs represent publicly visible installations and industrial rolling stock.
+        </p>
+        <div class="about-meta">
+          <span>LARDASS ARCHIVE</span>
+          <span>BRITISH COLUMBIA, CANADA</span>
+          <span>UPDATED 2026</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>LARDASS ARCHIVE</strong>
+        <span>All photographic rights remain with the original documentarians.</span>
+      </div>
+      <div class="footer-right">
+        <button id="topBtn" class="back-top-link">BACK TO TOP ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" title="Close (Esc)">&times;</button>
+      
+      <div class="lightbox-media-container">
+        <button class="lightbox-nav-btn prev-btn" id="lightboxPrev" title="Previous (Left Arrow)">&#10094;</button>
+        <img src="" alt="" class="lightbox-hero-img" id="lightboxImg">
+        <button class="lightbox-nav-btn next-btn" id="lightboxNext" title="Next (Right Arrow)">&#10095;</button>
+      </div>
+
+      <div class="lightbox-sidebar">
+        <div class="lightbox-tag-header">
+          <span class="lightbox-badge" id="modalBadge">LARD-01</span>
+          <span class="lightbox-coords" id="modalCoords">49°12'N 122°54'W</span>
+        </div>
+        <h2 class="lightbox-title" id="modalTitle">Title</h2>
+        <p class="lightbox-desc" id="modalDesc">Description</p>
+
+        <div class="lightbox-meta-list">
+          <div class="meta-row">
+            <span class="meta-key">LOCATION</span>
+            <span class="meta-val" id="modalLoc">Location</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">SURFACE</span>
+            <span class="meta-val" id="modalSurface">Surface</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">CREW / TAGS</span>
+            <span class="meta-val" id="modalCrew">Crew</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">PALETTE</span>
+            <span class="meta-val" id="modalPalette">Palette</span>
+          </div>
+        </div>
+
+        <div class="lightbox-counter-bar">
+          <span class="counter-text" id="modalCounter">1 OF 17</span>
+          <span class="hint-text">USE ARROW KEYS (← / →)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
